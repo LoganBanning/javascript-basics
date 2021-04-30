@@ -47,7 +47,7 @@ function greeting(name) {
 
 //Code Here
 var newGreeting = function(name) {
-  return "Hello" + name;
+  return "Hello, " + name;
 }
 //////////////////PROBLEM 8////////////////////
 
