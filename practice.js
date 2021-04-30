@@ -37,8 +37,9 @@ var devMountainGoal = null;
 
 //Code here
 function greeting(name) {
-  return "Hello" + name;
+  return "Hello, " + name;
 }
+
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
@@ -73,7 +74,7 @@ let dog = {
 //variable called devMountainClassPet.
 
 //Code Here
-dog.name(devMountainClassPet);
+var devMountainClassPet = dog.name;
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -107,8 +108,7 @@ function add(num1, num2) {
 //storing the result in the variable mathSum.
 
 //Code Here
-add(3, 4);
-var mathSum = add;
+let mathSum = add(3, 4);
 //////////////////PROBLEM 12////////////////////
 
 //Write a function called faveColorFinder that takes in one parameter called color
@@ -119,12 +119,12 @@ var mathSum = add;
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
-function faveColorFinder("color") {
-  if("color" === "red") {
+function faveColorFinder(color) {
+  if(color === "red") {
     return "red is a great color";
-  } else if("color" === "green") {
+  } else if(color === "green") {
     return "green is a solid favorite color";
-  } else if("color" === "black") {
+  } else if(color === "black") {
     return "so trendy"
   } else {
     return "you need to evaluate your favorite color choice";
